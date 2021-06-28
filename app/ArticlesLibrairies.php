@@ -4,15 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Librairies extends Model
+class ArticlesLibrairies extends Model
 {
-    
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'nom', 'adresse', 'tel', 'site_url', 'logo', 'ice', 'email',
+        'code_article', 'librairie_id',
     ];
 }
