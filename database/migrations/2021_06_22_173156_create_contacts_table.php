@@ -21,6 +21,10 @@ class CreateContactsTable extends Migration
             $table->text('commentaire');
             $table->string('fichier')->nullable();
             $table->text('sujet')->nullable();
+
+           //necessaire à laravel
+           $table->timestamp('updated_at')->nullable();
+           $table->timestamp('created_at');
         });
     }
 

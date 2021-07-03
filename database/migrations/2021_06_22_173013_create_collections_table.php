@@ -17,6 +17,10 @@ class CreateCollectionsTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->text('description')->nullable();
+
+            //necessaire à laravel
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at');
         });
     }
 

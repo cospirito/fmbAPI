@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Articles extends Model
 {
     //
+    public $table = 'articles';
+    protected $primaryKey = 'code';
+    protected $casts = ['code' => 'string'];
 
     /**
      * The attributes that are mass assignable.

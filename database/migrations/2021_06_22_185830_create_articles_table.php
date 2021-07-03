@@ -25,10 +25,15 @@ class CreateArticlesTable extends Migration
             $table->string('langue');
             $table->integer('nb_page');
             $table->string('editeur');
+            $table->string('image');
 
             //index
             $table->index('categorie_id');
             $table->index('collection_id');
+
+            //necessaire à laravel
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at');
 
 
         });

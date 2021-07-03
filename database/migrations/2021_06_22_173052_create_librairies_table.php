@@ -22,6 +22,10 @@ class CreateLibrairiesTable extends Migration
             $table->string('logo')->nullable();
             $table->string('ice')->nullable();
             $table->string('email')->nullable();
+
+            //necessaire à laravel
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at');
         });
     }
 

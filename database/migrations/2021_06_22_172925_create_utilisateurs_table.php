@@ -19,7 +19,11 @@ class CreateUtilisateursTable extends Migration
             $table->string('prenoms');
             $table->string('email')->uniaue();
             $table->string('mot_de_passe');
-            $table->enum('role', ['ADMIN, USER']);
+            $table->enum('role', ['ADMIN', 'USER'])->default('USER');
+
+            //necessaire à laravel
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at');
         });
     }
 

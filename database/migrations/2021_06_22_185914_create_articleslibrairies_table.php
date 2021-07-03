@@ -14,13 +14,17 @@ class CreateArticleslibrairiesTable extends Migration
     public function up()
     {
         Schema::create('articleslibrairies', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('code_article');
             $table->unsignedInteger('librairie_id');
-            $table->primary(['librairie_id', 'code_article']);
 
             //index
             $table->index('code_article');
             $table->index('librairie_id');
+
+            //necessaire à laravel
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at');
 
            
         });
