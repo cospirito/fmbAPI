@@ -18,7 +18,7 @@ class Articles extends Model
      */
     protected $fillable = [
         'code', 'categorie_id', 'collection_id', 'nom', 'auteur', 'prix', 'date_parution', 'description', 
-        'langue', 'nb_page', 'editeur',
+        'langue', 'nb_page', 'editeur','image',
     ];
 
 

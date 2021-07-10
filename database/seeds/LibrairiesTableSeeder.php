@@ -34,7 +34,8 @@ class LibrairiesTableSeeder extends Seeder
                 'adresse' => $faker->streetAddress,
                 'tel' => $faker->phoneNumber,
                 'site_url' => $faker->unique()->domainName,
-                'logo' => $faker->image($dir = 'public/img/librairies', $width = 640, $height = 480, 'cats', true, true, 'Faker'),
+                // 'logo' => $faker->image($dir = 'public/img/librairies', $width = 640, $height = 480, 'cats', true, true, 'Faker'),
+                'logo' => 'public/img/librairies/default.jpg',
                 'ice' => $ice,
                 'email' => $faker->unique()->email,
             ]);
