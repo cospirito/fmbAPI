@@ -20,8 +20,8 @@ class CreateLibrairiesTable extends Migration
             $table->string('tel');
             $table->string('site_url')->nullable();
             $table->string('logo')->nullable();
-            $table->string('ice')->nullable();
-            $table->string('email')->nullable();
+            $table->string('ice')->unique();
+            $table->string('email')->unique();
 
             //necessaire à laravel
             $table->timestamp('updated_at')->nullable();
