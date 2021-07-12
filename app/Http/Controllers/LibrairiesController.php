@@ -12,6 +12,7 @@ class LibrairiesController extends Controller
 {
 
     private $uploadArticlesImgFolder = "librairies";
+
     /**
      * index
      *

@@ -13,7 +13,7 @@ class Utilisateurs extends Model
      * @var array
      */
     protected $fillable = [
-        'nom', 'prenoms', 'email', 'mot_de_passe', 'role',
+        'nom', 'prenoms', 'email', 'mot_de_passe', 'role','api_token'
     ];
 
     /**
